@@ -18,3 +18,8 @@ To create QAM modulation we map the data on a constellation. For QAM-16 using Gr
 
 As you can see, in QAM-16 each symbol represents 4 bits.
 Another important aspect of that image is the Gray coding. In Gray coding nearby symbols differ by only 1 bit. This property helps improve BER. For more reading: http://www.dsplog.com/2008/06/05/16qam-bit-error-gray-mapping/
+
+## Includad files
+There are two files:
+ * QAM-M.ipynb - explains about the modulator implementation
+ * QAM.py - modulator module for use in projects
