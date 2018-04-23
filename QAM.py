@@ -26,11 +26,10 @@ def modulator(data, M, code='gray', data_type='binary'):
 	vect = arange(1, sqrt(M), 2)
 	symbols = concatenate((flip(-vect, axis=0), vect)).astype(int)
 
-	# Data handling
-	data_input = data.reshape((-1,k))
-
 	# Modulation
 	if data_type == 'binary':
+		# Data handling
+		data_input = data.reshape((-1,k))
 		I = zeros((data_input.shape[0],))
 		Q = zeros((data_input.shape[0],))
 		for n in range(int(data_input.shape[1] / 2)):
